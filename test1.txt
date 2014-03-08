@@ -1,0 +1,3 @@
+Changes the internal file position indicator associated with stream to a new position. The position parameter is a pointer to an fpos_t object whose value shall have been previously obtained with a call to fgetpos.
+The End-of-File internal indicator of the stream is cleared after a call to this function, and all effects from previous calls to ungetc are dropped.
+On streams open for update (read+write), a call to fsetpos allows to switch between reading and writing.
